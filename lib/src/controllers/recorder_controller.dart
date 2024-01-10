@@ -20,9 +20,9 @@ class RecorderController extends ChangeNotifier {
 
   IosEncoder iosEncoder = IosEncoder.kAudioFormatMPEG4AAC;
 
-  int sampleRate = 44100;
+  int sampleRate = 16000;
 
-  int? bitRate;
+  int? bitRate = 48000;
 
   /// Db we get from native is too high so in Android it the value is
   /// subtracted and in IOS value added.
